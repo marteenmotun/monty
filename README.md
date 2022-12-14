@@ -16,6 +16,7 @@ Linux, Ubuntu 20.04.1 and compiled with GCC (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.
 ## Instructions
 
 ### Resources:books:
+
 Read or watch:
 * [Google](https://www.google.com/webhp?q=stack%20and%20queue)
 * [Stack OverFlow](https://stackoverflow.com/questions/1433204/how-do-i-use-extern-to-share-variables-between-source-files)
