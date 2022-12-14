@@ -7,7 +7,7 @@
 #include <unistd.h>
 #include <ctype.h>
 
-/*--- Struct Definitions ---*/
+/*---- Struct Definitions ----*/
 extern int push_arg;
 
 /**
