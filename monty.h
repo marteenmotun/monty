@@ -20,9 +20,9 @@ extern int push_arg;
  */
 typedef struct stack_s
 {
-	int n;
-	struct stack_s *prev;
-	struct stack_s *next;
+int n;
+struct stack_s *prev;
+struct stack_s *next;
 } stack_t;
 
 /**
@@ -59,6 +59,9 @@ void read_file(char *filename, stack_t **stack);
 char *parse_line(char *line, stack_t **stack, unsigned int line_number);
 typedef void (*instruct_func)(stack_t **stack, unsigned int line_number);
 instruct_func get_op_func(char *str);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
+void addqueue(stack_t **head, int n);
+void f_queue(stack_t **head, unsigned int counter);
 
 /*Fuxntions Monty*/
 void _pall(stack_t **stack, unsigned int line_number);
