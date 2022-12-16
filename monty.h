@@ -83,6 +83,19 @@ void _add(stack_t **stack, unsigned int line_number);
 void _mul(stack_t **stack, unsigned int line_number);
 void _div(stack_t **stack, unsigned int line_number);
 void _mod(stack_t **stack, unsigned int line_number);
+void _stack(stack_t **stack, unsigned int line_number);                            
+void _queue(stack_t **stack, unsigned int line_number);
+
+/** Aux Functions **/
+int get_opcode(char *opcode);
+void exit_op(void);
+
+stack_t *add_dnodeint(stack_t **head, const int n);
+stack_t *add_dnodeint_end(stack_t **head, const int n);
+int delete_node_index(stack_t **head, unsigned int index);
+void free_stack_t(stack_t *head);
+
+int _isnumber(char *s);
 
 /*Utility functions*/
 void free_dlistint(stack_t *head);
